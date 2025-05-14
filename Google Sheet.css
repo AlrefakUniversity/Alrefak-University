@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	direction: rtl;
+	text-align: right;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #f3f3f3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px;
+}
+
+/* الشعار */
+.logo img {
+	width: 300px;
+	display: block;
+	margin: 0 auto 3px auto;
+}
+
+.header-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px; /* ليأخذ جزء كبير من الشاشة (يمكنك تعديله) */
+	text-align: center;
+}
+
+/* النصوص */
+.intro-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.intro-text h1 {
+	font-size: 28px;
+	color: #003b5b;
+	margin-bottom: 10px;
+}
+
+.intro-text p {
+	font-size: 18px;
+	color: #333;
+}
+
+
+/* النموذج */
+.container {
+	width: 100%;
+	max-width: 500px;
+	padding: 30px;
+	border: 1px solid #eeeeee;
+	border-radius: 10px;
+	background-color: rgb(15, 77, 152);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h4 {
+	margin-bottom: 10px;
+	font-size: 24px;
+	color: white;
+	text-align: right;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	direction: rtl;
+	text-align: right;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+}
+
+/* زر الإرسال داخل الحاوية */
+.submit-container {
+	text-align: right;
+}
+
+#submit {
+	border: none;
+	background-color: rgb(238, 189, 43);
+	color: white;
+	width: 100%;
+	max-width: 200px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 10px;
+}
+
+#submit:hover {
+	background-color: #333333;
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 600px) {
+	body {
+		padding: 10px;
+	}
+
+	.intro-text h1 {
+		font-size: 22px;
+	}
+
+	.intro-text p {
+		font-size: 16px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	input, textarea {
+		font-size: 16px;
+	}
+
+	#submit {
+		width: 100%;
+	}
+}
