@@ -18,7 +18,7 @@
   <!-- النصوص التعريفية -->
   <div class="intro-text">
     <h1>مرحبا بك في جامعة الرفاق</h1>
-    <p>يرجى ملء البيانات لإتمام عملية التسجيل المبدئي في الجامعة</p>
+    <p>يرجى إدخال البيانات المطلوبة في نموذج التسجيل المبدئي في الجامعة</p>
   </div>
 </div>
 
@@ -28,9 +28,27 @@
       <form method="post" action="" name="contact-form">
         <h4>نموذج التسجيل</h4>
         <input type="text" name="your-name" placeholder="الاسم الكامل" />
+         <p class="pp">تاريخ الميلاد   :</p>
+        <input type="date" name="your-Date"  />
         <input type="text" name="your-number" placeholder="رقم الهاتف" />
+        <input type="text" name="your-address" placeholder="عنوان السكن " />
         <input type="email" name="your-email" placeholder="البريد الإلكتروني" />
-        <textarea name="message" rows="7" placeholder="رسالتك أو استفسارك"></textarea>
+        <input type="text" name="your-ID" placeholder="الرقم الوطني " />
+       <p class="pp">يرجى اختيار القسم :</p>
+      
+ <select id="city" name="section">
+ <option value="s0"></option>
+  <option value=">هندسة نفط">هندسة نفط</option>
+  <option value=">هندسة مدنية">هندسة مدنية</option>
+  <option value=">هندسة العمارة">هندسة العمارة</option>
+  <option value=">المحاسبة">المحاسبة</option>
+  <option value="علوم حاسوب"> علوم حاسوب</option>
+  <option value=">إدارة أعمال">إدارة أعمال</option>
+  <option value=">قانون">قانون</option>
+  <option value=">اللغة الانجليزية">اللغة الانجليزية</option>
+  <option value=">ادارة المستشفيات">ادارة المستشفيات</option>
+</select>
+        <!-- <textarea name="message" rows="7" placeholder="رسالتك أو استفسارك"></textarea> -->
         <div class="submit-container">
           <input type="submit" value="إرسال" id="submit" />
         </div>
