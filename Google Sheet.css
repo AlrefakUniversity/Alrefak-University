@@ -105,6 +105,11 @@ input, textarea {
 #submit:hover {
 	background-color: #333333;
 }
+.pp{
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 
 /* تصميم متجاوب للشاشات الصغيرة */
 @media (max-width: 600px) {
